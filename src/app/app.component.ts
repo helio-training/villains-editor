@@ -32,4 +32,10 @@ export class AppComponent {
     }
   ];
   
+  selectedVillain: Villain;
+  
+  constructor() {
+    this.selectedVillain = this.badGuys[0];
+  }
+  
 }

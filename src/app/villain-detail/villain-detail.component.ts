@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import Villain from "../models/villain";
 
 @Component({
@@ -8,15 +8,11 @@ import Villain from "../models/villain";
 })
 export class VillainDetailComponent implements OnInit {
   
-  villain: Villain = {
-    id: 1,
-    name: 'Harambe',
-    power: 5
-  };
+  @Input() villain: Villain;
   
   constructor() {
   }
-
+  
   ngOnInit() {
   }
   
@@ -33,5 +29,5 @@ export class VillainDetailComponent implements OnInit {
     console.log(villain);
     // console.log(this.villain);
   }
-
+  
 }

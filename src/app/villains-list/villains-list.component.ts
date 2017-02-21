@@ -10,6 +10,4 @@ import Villain from '../models/villain';
 export class VillainsListComponent {
   
   @Input() villains: Villain[];
-     
-  
 }

@@ -1,3 +1,5 @@
 <ul>
-  <li *ngFor="let villain of villains">{{ villain.name }}</li>
+  <li *ngFor="let villain of villains">
+    <span (click)="villainClicked(villain)">{{ villain.name }}</span>
+  </li>
 </ul>

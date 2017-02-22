@@ -8,7 +8,7 @@ import Villain from "./models/villain";
 })
 export class AppComponent {
   title = 'app works!';
-  
+
   badGuys: Villain[] = [
     {
       id: 1,
@@ -31,11 +31,15 @@ export class AppComponent {
       power: 1
     }
   ];
-  
-  selectedVillain: Villain;
-  
+
+  // selectedVillain: Villain;
+
   constructor() {
-    this.selectedVillain = this.badGuys[0];
+    // this.selectedVillain = this.badGuys[0];
   }
-  
+
+  // villainSelected(villain) {
+  //   this.selectedVillain = villain;
+  // }
+
 }

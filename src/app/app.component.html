@@ -1,2 +1,14 @@
-<villains-list [villains]="badGuys"></villains-list>
-<villain-detail [villain]="selectedVillain"></villain-detail>
+<villains-list #villainsList (selected)="villainsList.selected"></villains-list>
+
+<div class="container">
+  <div *ngIf="villainsList.selected">
+    <villain-detail [villain]="villainsList.selected"></villain-detail>
+  </div>
+
+  <div *ngIf="!villainsList.selected">
+    <h1>Select an Villain</h1>
+    <p><strong><------</strong> Choose a villain on the left </p>
+  </div>
+
+</div>
+
